@@ -1,0 +1,405 @@
+/* body */
+body{
+    margin : 0px;
+}
+/* this is helpful code snipet by this we placed all section in column fashion */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* body header */
+#body-header{
+    height: 65vh;
+    background-image: url(mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Horizontal List */
+.horizontal-list{
+    list-style: none;
+    padding: 0px;
+    margin:0px;
+}
+
+/* Horizontal List Item */
+.horizontal-list li{
+    display : inline-block;
+
+    margin : 40px 25px 25px 0px;
+}
+
+/* Horizontal List Item Link */
+.horizontal-list li a{
+    text-decoration: none;
+    color : white;
+    font-size: 1.5rem;
+}
+
+.horizontal-list li a:hover{
+    color : lightgray;
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+/* Class For Center The Text On The Web Page */
+.text-center{
+    text-align: center;
+}
+
+
+/* Name */
+
+
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color : white;
+    font-weight: 700;
+    margin-bottom: -20px; 
+}
+
+.social-icons li a i{
+    padding: 10px;
+    font-size : 1.5rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    /* box-shadow : h-offset v-offset blurness spreadness color */
+    box-shadow: 0px 0px 6px 4px rgba(230,196, 196, 0.3);
+}
+
+section:nth-child(2n){
+    background-color: lightgray;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+#about{
+    width: 100%;
+    position: relative;
+    margin-bottom:200px;
+}
+.about-mypic{
+    height : 12em;
+    width: 12em;
+    margin : 0px auto 0px;
+    font-size: 1.2rem;
+}
+.about-mypic img{
+    height: 100%;
+    width: 100%;
+    margin-top : -17vh;
+    border : 5px solid lightgray;
+    box-shadow: 0px 0px 6px 10px rgba(230,196, 196, 0.3);
+    border-radius: 50%;
+}
+
+.detail{
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-top:-5%;
+    font-family: 'Comic Sans', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1px;
+    color : rgb(77, 73, 73);
+}
+
+/* ABOUT ENDING */
+
+/* SKILLS SECTION START */
+
+#skills{
+    margin-top:5%;
+}
+.section-heading{
+    width: auto;
+    padding: 10px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    display: inline-block;
+    padding-top:30px;
+    margin-right: 0.5rem;
+}
+
+.skills-display{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.outer{
+    width: 120px;
+    border-radius: 50px;
+    background-color: gray;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.inner{
+    margin: 1px;
+    color: white;
+    padding : 5px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.cplus{
+    background-color: blue;
+    width: 80px;
+}
+
+.HTML{
+    background-color: tomato;
+    width: 90px;
+}
+
+.CSS{
+    background-color: indianred;
+    width: 95px;
+}
+
+.JAVASCRIPT{
+    background-color: rgb(58, 163, 58);
+    width: 90px;
+}
+
+.JAVA{
+    background-color: blue;
+    width: 80px;
+}
+
+.ANDROID{
+    background-color: rgb(58, 163, 58);
+    width: 60px;
+}
+
+.IOS{
+    background-color: tomato;
+    width: 60px;
+}
+
+.NODE-JS{
+    background-color: indianred;
+    width: 70px;
+}
+/* SKILLS SECTION END */
+
+/* Work Experience Section Start */
+.timeline{
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box{
+    margin:5px;
+    position: relative;
+    width: 40%;
+    left:5%;
+    min-height: 150px;
+}
+
+.timeline-box:nth-child(2n+1):after{
+    content : '';
+    position: absolute;
+    top : 40%;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: red;
+    right: -12.5%;
+    z-index: 2;
+
+}
+
+.timeline-box:nth-child(2n):after{
+    content : '';
+    position: absolute;
+    top : 40%;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    background-color: red;
+    left: -9.5%;
+    z-index: 2;
+
+}
+.timeline-box:nth-child(2n){
+    left : 53%;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border : 3px dashed #0096fa6b;
+    top : 10%;
+    left : 50%;
+}  
+
+.timeline-travller{
+    position: sticky;
+    top : 25%;
+    transform: rotate(90deg);
+    z-index: 3;
+}
+
+/* Company Logo */
+
+
+.timeline-logo{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin : 20px 0 0 5px;
+    font-size: 2em;
+}
+
+.timeline-desiganation{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #04167c;
+    padding-left: 20px;
+    overflow-wrap: break-word;
+}
+
+.timeline-company{
+    color: #f76808;
+    font-size: 1.4em;
+    margin-left : 60%;
+    overflow-wrap: break-word;
+}
+
+.timeline-company-right{
+    color: #f76808;
+    font-size: 1.4em;
+    margin-left : 10%;
+    overflow-wrap: break-word;
+}
+.timeline-duration{
+    color: gray;
+    font-size: 1.4em;
+    margin-left : 15%;
+    overflow-wrap: break-word;
+}
+
+.timeline-duration-right{
+    color: gray;
+    font-size: 1.4em;
+    margin-left : 10%;
+    overflow-wrap: break-word;
+}
+
+.timeline-content{
+    text-align: justify;
+    color: gray;
+    overflow-wrap: break-word;
+}
+
+.timeline-content-right{
+    color: gray;
+    overflow-wrap: break-word;
+    margin-left:10%;
+}
+  
+/* Work Experience Section End */
+
+/* Education Section End */
+
+/* Education Section Start */
+
+/* PORTFOLIO SECTION START */
+
+.portfolio-display{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-outer-div{
+    margin: 10px;
+}
+
+.img-outer-div img{
+    height: 200px;
+    width: 200px;
+}
+/* PORTFOLIO SECTION END */
+
+/* Contact Section Start */
+
+#contact{
+    background-image: linear-gradient(to left, #403066,#2D4E95);
+    color : white;
+}
+
+.contact-detail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field-group{
+    width: 40%;
+    position: relative;
+    padding-top: 15px;
+    margin-left: 10%;
+}
+
+.input-field{
+    width: 100%;
+    outline : 0;
+    border : 0;
+    border-bottom: 2px solid white;
+    padding : 10px 0;
+    background: transparent;
+    font-size : 1.2em;
+    color : white;
+    transition: 0.3s ease;
+    margin-bottom: 7%;
+}
+
+.send-message{
+    outline : 0;
+    border : 0;
+    border: 2px solid white;
+    padding : 10px;
+    background: transparent;
+    color : white;
+    margin-left: 40%;
+}
+
+.address{
+    width: 35%;
+    padding : 20px;
+    margin-left: 5%;
+    margin-right: 2%;
+    font-size : 1.5em;
+    text-align: justify;
+}
+
+#get-in-touch{
+    font-size : 0.7em;
+}
+
+#contact-icon{
+    width: auto;
+    margin: auto;
+}
+
+/* Contact Section End */
